@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,7 +20,9 @@ public class Atendente {
     @Id
     private String id;
 
+    @NotNull
     private String nome;
+
     private String email;
     private String password;
 
